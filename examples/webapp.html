@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Webapp</title>
+
+  <style>
+  li h2 {
+    font-size: 125%;
+  }
+  ul ul {
+    list-style-type: upper-roman;
+  }
+  </style>
+</head>
+<body>
+<h1>Webapp</h1>
+
+<p>No <i>particular</i> threats to consider at this point.</p><p>It's <b>extremely</b> safe.</p>
+
+<img src="./webapp.dfd.png">
+<a href="./webapp.seq.png">Sequence Diagram</a>
+
+<ol>
+  <li>
+        <h2>Request /</h2>
+    
+    <ul>
+        </ul>
+
+        <p>User navigates with a browser to see some content.</p>
+      </li>
+  <li>
+        <h2>Log</h2>
+    
+    <ul>
+          <li>IP Address&lt;sub&gt;user&lt;/sub&gt;</li>
+          <li>Timestamp&lt;sub&gt;request&lt;/sub&gt;</li>
+          <li>Geolocation</li>
+        </ul>
+
+        <p>Logged to a ELK stack.</p>
+      </li>
+  <li>
+        <h2>Response</h2>
+    
+    <ul>
+          <li>User Profile</li>
+        </ul>
+
+        <p>The server responds with some HTML.</p>
+      </li>
+  <li>
+        <h2>Log</h2>
+    
+    <ul>
+          <li>Page Navigation</li>
+        </ul>
+
+        <p>The Google Analytics plugin sends navigation<br/>data to Google.</p>
+      </li>
+</ol>
+
+<h2>Threats</h2>
+
+<ul>
+<li><code>csrf</code></li>
+<li><code>mitm</code></li>
+</ul>
+
+</body>
+</html>
